@@ -10,5 +10,5 @@ const getSequence = (num, i = 0) => {
 	let r;
 	if (r = fibonacci(i, num)) return r;
 	return getSequence(num, ++i);
-}
+};
 console.log(getSequence(10)); // [0, 1, 2, 3, 5, 8, 13, 21, 34]
