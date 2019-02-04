@@ -3,9 +3,3 @@ var elements = ['fate', 'fools', 'felt', 'feel', 'far'];
 
 console.log(elements.join());
 // expected output: "fate", "fools", "felt", "feel", "far"
-
-console.log(elements.join(''));
-// expected output: "fatefoolsfeltfeelfar"
-
-console.log(elements.join('-'));
-// expected output: "fate-fools-felt-feel-far"
