@@ -1,14 +1,11 @@
-const fibonacci = (() => {
-	const seq = [];
-	return (n, num) => {
-		if (n === num) return seq;
-		seq.length < 2 ? seq.push(n) : seq.push(seq[n - 2] + seq[n - 1]);
-	};
-})();
+"Fate protects fools, little children and ships named Enterprise. You're going to be an interesting companion, Mr. Data. Some days you get the bear, and some days the bear gets you. Maybe if we felt any human loss as keenly as we feel one of those close to us, human history would be far less bloody. Why don't we just give everybody a promotion and call it a night - 'Commander'? Well, that's certainly good to know. Mr. Worf, you do remember how to fire phasers? A lot of things can change in twelve years, Admiral."
+var elements = ['fate', 'fools', 'felt', 'feel', 'far'];
 
-const getSequence = (num, i = 0) => {
-	let r;
-	if (r = fibonacci(i, num)) return r;
-	return getSequence(num, ++i);
-};
-console.log(getSequence(10)); // [0, 1, 2, 3, 5, 8, 13, 21, 34]
+console.log(elements.join());
+// expected output: "fate", "fools", "felt", "feel", "far"
+
+console.log(elements.join(''));
+// expected output: "fatefoolsfeltfeelfar"
+
+console.log(elements.join('-'));
+// expected output: "fate-fools-felt-feel-far"
